@@ -1,0 +1,166 @@
+type: collection.insomnia.rest/5.0
+name: My first collection
+meta:
+  id: wrk_b4bb867e5bf14ebc8da4a05722fe634a
+  created: 1750658443968
+  modified: 1750658443968
+  description: ""
+collection:
+  - url: http://20.244.56.144/evaluation-service/register
+    name: My first request
+    meta:
+      id: req_2ed3fd37a36c48948fee6f8b5d1af86d
+      created: 1750658444092
+      modified: 1750663022737
+      isPrivate: false
+      description: ""
+      sortKey: -1750658444092
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "email": "2203031240625@paruluniversity.ac.in",
+        	"name" : "Komal Singh Markam",
+        	"mobileNo" : "9165201774",
+        	"githubUsername" : "github",
+        	"rollno" : "2203031240625",
+        	"collegeName" : "Parul University",
+        	"accessCode" : "TRzgWM"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://20.244.56.144/evaluation-service/register
+    name: New Request
+    meta:
+      id: req_ab54ae0196364469ade87b3011c2b4d6
+      created: 1750663329183
+      modified: 1750663849364
+      isPrivate: false
+      description: ""
+      sortKey: -1750663329183
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "2203031240625@paruluniversity.ac.in",
+        	"name": "Komal Singh Markam",
+        	"mobileNo": "9165201774",
+        	"githubUsername": "KomalSinghMarkam",
+        	"rollno": "2203031240625",
+        	"collegename": "Parul university",
+        	"accessCode": "TRzgWM"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://20.244.56.144/evaluation-service/auth
+    name: New Request
+    meta:
+      id: req_2d7911aca7ad476aba79f943f3ace5ab
+      created: 1750663998873
+      modified: 1750664538136
+      isPrivate: false
+      description: ""
+      sortKey: -1750663998873
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "2203031240625@paruluniversity.ac.in",
+        	"name": "Komal Singh Markam",
+        	"rollNo": "2203031240625",
+        	"accessCode": "TRzgWM",
+        	"clientID": "d1a916a1-d6fb-4172-8c31-4b0e5a57e1fd",
+        	"clientSecret": "eKWUFsHMaJNBQSVm"
+        	
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://20.244.56.144/evaluation-service/logs
+    name: New Request
+    meta:
+      id: req_e1195a42727c4075877a07577c7c8f7c
+      created: 1750665293451
+      modified: 1750666448624
+      isPrivate: false
+      description: ""
+      sortKey: -1750665293451
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "stack": "backend",
+          "level": "error",
+          "package": "handler",
+          "message": "received string, expected bool"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_8cc15b67854f41d6952927b8407431c5
+      - name: User-Agent
+        value: insomnia/11.2.0
+        id: pair_1ae7a3296e7948409957322d0db058b8
+      - id: pair_504afe45f77348d8a04a97dee0777a90
+        name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiIyMjAzMDMxMjQwNjI1QHBhcnVsdW5pdmVyc2l0eS5hYy5pbiIsImV4cCI6MTc1MDY2NzI5NywiaWF0IjoxNzUwNjY2Mzk3LCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiODkwYzhhZDYtZWRmYy00NmY4LWJmOGEtZjgxNGI5MWQxZTZmIiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoia29tYWwgc2luZ2ggbWFya2FtIiwic3ViIjoiZDFhOTE2YTEtZDZmYi00MTcyLThjMzEtNGIwZTVhNTdlMWZkIn0sImVtYWlsIjoiMjIwMzAzMTI0MDYyNUBwYXJ1bHVuaXZlcnNpdHkuYWMuaW4iLCJuYW1lIjoia29tYWwgc2luZ2ggbWFya2FtIiwicm9sbE5vIjoiMjIwMzAzMTI0MDYyNSIsImFjY2Vzc0NvZGUiOiJUUnpnV00iLCJjbGllbnRJRCI6ImQxYTkxNmExLWQ2ZmItNDE3Mi04YzMxLTRiMGU1YTU3ZTFmZCIsImNsaWVudFNlY3JldCI6ImVLV1VGc0hNYUpOQlFTVm0ifQ.t6RFZtADRkn_0Vk3sDBrDbXLInQw0Y9loRrVCLXLDSo
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_4ab8a710d62cb6a180fff2d18acf830b5a7f4cc0
+    created: 1750658443980
+    modified: 1750658443980
+environments:
+  name: Base Environment
+  meta:
+    id: env_4ab8a710d62cb6a180fff2d18acf830b5a7f4cc0
+    created: 1750658443976
+    modified: 1750658443976
+    isPrivate: false
